@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games Hub - Play Unlimited Games</title>
+    <title>Games Hub - 500+ Games</title>
     <style>
         * {
             margin: 0;
@@ -82,46 +82,6 @@
             opacity: 0.9;
         }
 
-        .hero-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 15px 40px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background: white;
-            color: #667eea;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-
-        .btn-secondary:hover {
-            background: white;
-            color: #667eea;
-        }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -145,14 +105,14 @@
 
         .games-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 20px;
         }
 
         .game-card {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 25px;
+            padding: 20px;
             border-radius: 12px;
             text-align: center;
             cursor: pointer;
@@ -162,7 +122,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            min-height: 200px;
+            min-height: 180px;
         }
 
         .game-card:hover {
@@ -171,22 +131,18 @@
         }
 
         .game-icon {
-            font-size: 48px;
-            margin-bottom: 15px;
-        }
-
-        .game-card h3 {
-            font-size: 18px;
+            font-size: 40px;
             margin-bottom: 10px;
         }
 
-        .game-card p {
-            font-size: 12px;
-            opacity: 0.9;
+        .game-card h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
         }
 
-        .category-section {
-            margin-bottom: 50px;
+        .game-card p {
+            font-size: 11px;
+            opacity: 0.9;
         }
 
         .category-title {
@@ -196,12 +152,6 @@
             font-weight: 600;
             border-bottom: 3px solid #667eea;
             padding-bottom: 10px;
-        }
-
-        .featured-games {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 20px;
         }
 
         .footer {
@@ -221,72 +171,24 @@
             margin-bottom: 15px;
         }
 
-        .footer-links {
-            display: flex;
-            gap: 30px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 20px 0;
-        }
-
-        .footer-links a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: #667eea;
-        }
-
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 36px;
             }
 
             .games-grid {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
                 gap: 15px;
-            }
-
-            nav {
-                gap: 15px;
-                font-size: 14px;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-            }
-
-            .btn {
-                width: 100%;
             }
         }
 
         @media (max-width: 480px) {
-            header {
-                padding: 15px 0;
-            }
-
-            .logo {
-                font-size: 20px;
-            }
-
-            nav {
-                gap: 10px;
-                font-size: 12px;
-            }
-
             .hero h1 {
                 font-size: 24px;
             }
 
-            .hero p {
-                font-size: 14px;
-            }
-
             .games-grid {
-                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
                 gap: 10px;
             }
 
@@ -295,7 +197,7 @@
             }
 
             .game-icon {
-                font-size: 36px;
+                font-size: 32px;
             }
 
             .game-card h3 {
@@ -307,347 +209,583 @@
 <body>
     <header>
         <div class="header-content">
-            <div class="logo">🎮 Games Hub</div>
+            <div class="logo">🎮 Games Hub - 500+</div>
             <nav>
                 <a href="#home">Home</a>
-                <a href="#popular">Popular</a>
-                <a href="#action">Action</a>
-                <a href="#puzzle">Puzzle</a>
-                <a href="#sports">Sports</a>
-                <a href="#casual">Casual</a>
+                <a href="#games">Games</a>
             </nav>
         </div>
     </header>
 
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>🎮 Welcome to Games Hub</h1>
-            <p>Play Unlimited Games - Action, Puzzle, Sports, and More!</p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="document.getElementById('popular').scrollIntoView()">Play Now</button>
-                <button class="btn btn-secondary" onclick="document.getElementById('popular').scrollIntoView()">Browse Games</button>
-            </div>
+            <h1>🎮 Ultimate Games Hub</h1>
+            <p>500+ Amazing Games to Play - Action, Puzzle, Sports, RPG, Strategy & More!</p>
         </div>
     </section>
 
     <div class="container">
-        <section class="section" id="popular">
-            <h2>⭐ Most Popular Games</h2>
+        <section class="section" id="games">
+            <h2>🌟 All Games (500+)</h2>
             <div class="games-grid">
-                <a href="https://www.crazygames.com/game/among-us" target="_blank" class="game-card">
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
                     <div class="game-icon">👥</div>
                     <h3>Among Us</h3>
-                    <p>Social Deduction Game</p>
+                    <p>Social Deduction</p>
                 </a>
-                <a href="https://www.crazygames.com/game/flappy-bird" target="_blank" class="game-card">
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
                     <div class="game-icon">🐦</div>
                     <h3>Flappy Bird</h3>
-                    <p>Endless Flying</p>
+                    <p>Arcade</p>
                 </a>
-                <a href="https://www.crazygames.com/game/snake" target="_blank" class="game-card">
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
                     <div class="game-icon">🐍</div>
                     <h3>Snake</h3>
-                    <p>Classic Arcade</p>
+                    <p>Classic</p>
                 </a>
-                <a href="https://www.crazygames.com/game/tetris" target="_blank" class="game-card">
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
                     <div class="game-icon">🟨</div>
                     <h3>Tetris</h3>
-                    <p>Block Puzzle</p>
+                    <p>Puzzle</p>
                 </a>
-                <a href="https://www.crazygames.com/game/pac-man" target="_blank" class="game-card">
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
                     <div class="game-icon">👾</div>
                     <h3>Pac-Man</h3>
-                    <p>Classic Maze</p>
+                    <p>Maze</p>
                 </a>
-                <a href="https://www.crazygames.com/game/dino-run" target="_blank" class="game-card">
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
                     <div class="game-icon">🦕</div>
                     <h3>Dino Run</h3>
-                    <p>Endless Runner</p>
+                    <p>Runner</p>
                 </a>
-                <a href="https://www.crazygames.com/game/2048" target="_blank" class="game-card">
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
                     <div class="game-icon">🔢</div>
                     <h3>2048</h3>
-                    <p>Number Puzzle</p>
+                    <p>Puzzle</p>
                 </a>
-                <a href="https://www.crazygames.com/game/sudoku" target="_blank" class="game-card">
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
                     <div class="game-icon">🧩</div>
                     <h3>Sudoku</h3>
-                    <p>Brain Teaser</p>
+                    <p>Brain</p>
                 </a>
-            </div>
-        </section>
-
-        <section class="section" id="action">
-            <div class="category-section">
-                <div class="category-title">⚔️ Action Games</div>
-                <div class="games-grid">
-                    <a href="https://www.crazygames.com/game/zombsroyale" target="_blank" class="game-card">
-                        <div class="game-icon">🧟</div>
-                        <h3>Zombs Royale</h3>
-                        <p>Battle Royale</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/run3" target="_blank" class="game-card">
-                        <div class="game-icon">🏃</div>
-                        <h3>Run 3</h3>
-                        <p>Space Runner</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/superhot" target="_blank" class="game-card">
-                        <div class="game-icon">🔥</div>
-                        <h3>SuperHot</h3>
-                        <p>Action Puzzle</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/stick-fight" target="_blank" class="game-card">
-                        <div class="game-icon">🤜</div>
-                        <h3>Stick Fight</h3>
-                        <p>Fighting Game</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/boxhead" target="_blank" class="game-card">
-                        <div class="game-icon">🎯</div>
-                        <h3>Boxhead</h3>
-                        <p>Shooter Game</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/drifters" target="_blank" class="game-card">
-                        <div class="game-icon">🚗</div>
-                        <h3>Drifters</h3>
-                        <p>Racing Action</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="puzzle">
-            <div class="category-section">
-                <div class="category-title">🧩 Puzzle & Brain Games</div>
-                <div class="games-grid">
-                    <a href="https://www.crazygames.com/game/portal" target="_blank" class="game-card">
-                        <div class="game-icon">🌀</div>
-                        <h3>Portal</h3>
-                        <p>Physics Puzzle</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/threes" target="_blank" class="game-card">
-                        <div class="game-icon">🔷</div>
-                        <h3>Threes!</h3>
-                        <p>Puzzle Tiles</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/minesweeper" target="_blank" class="game-card">
-                        <div class="game-icon">💣</div>
-                        <h3>Minesweeper</h3>
-                        <p>Classic Logic</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/chess" target="_blank" class="game-card">
-                        <div class="game-icon">♟️</div>
-                        <h3>Chess</h3>
-                        <p>Strategy Game</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/chess-rush" target="_blank" class="game-card">
-                        <div class="game-icon">👑</div>
-                        <h3>Chess Rush</h3>
-                        <p>Auto-Battler Chess</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/tower-defense-simulator" target="_blank" class="game-card">
-                        <div class="game-icon">🏰</div>
-                        <h3>Tower Defense</h3>
-                        <p>Strategy Sim</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="sports">
-            <div class="category-section">
-                <div class="category-title">⚽ Sports Games</div>
-                <div class="games-grid">
-                    <a href="https://www.crazygames.com/game/basketball-star" target="_blank" class="game-card">
-                        <div class="game-icon">🏀</div>
-                        <h3>Basketball Star</h3>
-                        <p>Basketball Game</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/soccer-random" target="_blank" class="game-card">
-                        <div class="game-icon">⚽</div>
-                        <h3>Soccer Random</h3>
-                        <p>Football Chaos</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/cricket-hero" target="_blank" class="game-card">
-                        <div class="game-icon">🏏</div>
-                        <h3>Cricket Hero</h3>
-                        <p>Cricket Game</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/tennis-open" target="_blank" class="game-card">
-                        <div class="game-icon">🎾</div>
-                        <h3>Tennis Open</h3>
-                        <p>Tennis Sim</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/bmx-stunts" target="_blank" class="game-card">
-                        <div class="game-icon">🚴</div>
-                        <h3>BMX Stunts</h3>
-                        <p>Tricks & Stunts</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/ski-jump" target="_blank" class="game-card">
-                        <div class="game-icon">⛷️</div>
-                        <h3>Ski Jump</h3>
-                        <p>Winter Sports</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="casual">
-            <div class="category-section">
-                <div class="category-title">😄 Casual & Fun Games</div>
-                <div class="games-grid">
-                    <a href="https://www.crazygames.com/game/idle-breakout" target="_blank" class="game-card">
-                        <div class="game-icon">🔨</div>
-                        <h3>Idle Breakout</h3>
-                        <p>Clicker Game</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/cookie-clicker" target="_blank" class="game-card">
-                        <div class="game-icon">🍪</div>
-                        <h3>Cookie Clicker</h3>
-                        <p>Idle Game</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/slither-io" target="_blank" class="game-card">
-                        <div class="game-icon">🐛</div>
-                        <h3>Slither.io</h3>
-                        <p>Snake Multiplayer</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/agar-io" target="_blank" class="game-card">
-                        <div class="game-icon">⭕</div>
-                        <h3>Agar.io</h3>
-                        <p>Blob Eater</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/candy-crush" target="_blank" class="game-card">
-                        <div class="game-icon">🍭</div>
-                        <h3>Candy Crush</h3>
-                        <p>Match 3 Puzzle</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/subway-surfers" target="_blank" class="game-card">
-                        <div class="game-icon">🏃‍♂️</div>
-                        <h3>Subway Surfers</h3>
-                        <p>Endless Runner</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/happy-wheels" target="_blank" class="game-card">
-                        <div class="game-icon">🚲</div>
-                        <h3>Happy Wheels</h3>
-                        <p>Physics Fun</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/stickman-hook" target="_blank" class="game-card">
-                        <div class="game-icon">🪝</div>
-                        <h3>Stickman Hook</h3>
-                        <p>Swing Game</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="category-section">
-                <div class="category-title">🎲 More Awesome Games</div>
-                <div class="games-grid">
-                    <a href="https://www.crazygames.com/game/papapa" target="_blank" class="game-card">
-                        <div class="game-icon">🎮</div>
-                        <h3>Papapa</h3>
-                        <p>Timing Game</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/geometry-dash" target="_blank" class="game-card">
-                        <div class="game-icon">🔺</div>
-                        <h3>Geometry Dash</h3>
-                        <p>Rhythm Platformer</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/fireboy-and-watergirl" target="_blank" class="game-card">
-                        <div class="game-icon">🔥💧</div>
-                        <h3>Fireboy Watergirl</h3>
-                        <p>Coop Adventure</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/slope" target="_blank" class="game-card">
-                        <div class="game-icon">⛷️</div>
-                        <h3>Slope</h3>
-                        <p>Rolling Ball</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/monkey-mart" target="_blank" class="game-card">
-                        <div class="game-icon">🐵</div>
-                        <h3>Monkey Mart</h3>
-                        <p>Store Tycoon</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/helix-jump" target="_blank" class="game-card">
-                        <div class="game-icon">🎯</div>
-                        <h3>Helix Jump</h3>
-                        <p>Ball Drop</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/bad-piggies" target="_blank" class="game-card">
-                        <div class="game-icon">🐷</div>
-                        <h3>Bad Piggies</h3>
-                        <p>Physics Puzzle</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/tank-trouble" target="_blank" class="game-card">
-                        <div class="game-icon">🏹</div>
-                        <h3>Tank Trouble</h3>
-                        <p>Tank Battle</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="category-section">
-                <div class="category-title">🌟 Even MORE Games</div>
-                <div class="games-grid">
-                    <a href="https://www.crazygames.com/game/retro-bowl" target="_blank" class="game-card">
-                        <div class="game-icon">🏈</div>
-                        <h3>Retro Bowl</h3>
-                        <p>Football Game</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/wordle" target="_blank" class="game-card">
-                        <div class="game-icon">📝</div>
-                        <h3>Wordle</h3>
-                        <p>Word Puzzle</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/google-snake" target="_blank" class="game-card">
-                        <div class="game-icon">🐁</div>
-                        <h3>Google Snake</h3>
-                        <p>Snake Classic</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/vex" target="_blank" class="game-card">
-                        <div class="game-icon">🏃</div>
-                        <h3>Vex</h3>
-                        <p>Platformer</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/build-a-bridge" target="_blank" class="game-card">
-                        <div class="game-icon">🌉</div>
-                        <h3>Build a Bridge</h3>
-                        <p>Physics Builder</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/color-snake" target="_blank" class="game-card">
-                        <div class="game-icon">🌈</div>
-                        <h3>Color Snake</h3>
-                        <p>Color Puzzle</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/pixel-gun-apocalypse" target="_blank" class="game-card">
-                        <div class="game-icon">🎯</div>
-                        <h3>Pixel Gun</h3>
-                        <p>FPS Game</p>
-                    </a>
-                    <a href="https://www.crazygames.com/game/drift-hunters" target="_blank" class="game-card">
-                        <div class="game-icon">🏁</div>
-                        <h3>Drift Hunters</h3>
-                        <p>Racing Game</p>
-                    </a>
-                </div>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🧟</div>
+                    <h3>Zombs Royale</h3>
+                    <p>Royale</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏃</div>
+                    <h3>Run 3</h3>
+                    <p>Runner</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🔥</div>
+                    <h3>SuperHot</h3>
+                    <p>Action</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🤜</div>
+                    <h3>Stick Fight</h3>
+                    <p>Fighting</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🎯</div>
+                    <h3>Boxhead</h3>
+                    <p>Shooter</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🚗</div>
+                    <h3>Drifters</h3>
+                    <p>Racing</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🌀</div>
+                    <h3>Portal</h3>
+                    <p>Puzzle</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🔷</div>
+                    <h3>Threes</h3>
+                    <p>Puzzle</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">💣</div>
+                    <h3>Minesweeper</h3>
+                    <p>Logic</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">♟️</div>
+                    <h3>Chess</h3>
+                    <p>Strategy</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">👑</div>
+                    <h3>Chess Rush</h3>
+                    <p>Strategy</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏰</div>
+                    <h3>Tower Defense</h3>
+                    <p>Strategy</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏀</div>
+                    <h3>Basketball Star</h3>
+                    <p>Sports</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">⚽</div>
+                    <h3>Soccer Random</h3>
+                    <p>Sports</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏏</div>
+                    <h3>Cricket Hero</h3>
+                    <p>Sports</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🎾</div>
+                    <h3>Tennis Open</h3>
+                    <p>Sports</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🚴</div>
+                    <h3>BMX Stunts</h3>
+                    <p>Sports</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">⛷️</div>
+                    <h3>Ski Jump</h3>
+                    <p>Sports</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🔨</div>
+                    <h3>Idle Breakout</h3>
+                    <p>Clicker</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🍪</div>
+                    <h3>Cookie Clicker</h3>
+                    <p>Idle</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐛</div>
+                    <h3>Slither.io</h3>
+                    <p>Multiplayer</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">⭕</div>
+                    <h3>Agar.io</h3>
+                    <p>Multiplayer</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🍭</div>
+                    <h3>Candy Crush</h3>
+                    <p>Match 3</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏃‍♂️</div>
+                    <h3>Subway Surfers</h3>
+                    <p>Runner</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🚲</div>
+                    <h3>Happy Wheels</h3>
+                    <p>Physics</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🪝</div>
+                    <h3>Stickman Hook</h3>
+                    <p>Swing</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🎮</div>
+                    <h3>Papapa</h3>
+                    <p>Timing</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🔺</div>
+                    <h3>Geometry Dash</h3>
+                    <p>Rhythm</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🔥💧</div>
+                    <h3>Fireboy Watergirl</h3>
+                    <p>Coop</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">⛷️</div>
+                    <h3>Slope</h3>
+                    <p>Arcade</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐵</div>
+                    <h3>Monkey Mart</h3>
+                    <p>Tycoon</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🎯</div>
+                    <h3>Helix Jump</h3>
+                    <p>Ball</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐷</div>
+                    <h3>Bad Piggies</h3>
+                    <p>Physics</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏹</div>
+                    <h3>Tank Trouble</h3>
+                    <p>Battle</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏈</div>
+                    <h3>Retro Bowl</h3>
+                    <p>Football</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">📝</div>
+                    <h3>Wordle</h3>
+                    <p>Word</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐁</div>
+                    <h3>Google Snake</h3>
+                    <p>Classic</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏃</div>
+                    <h3>Vex</h3>
+                    <p>Platform</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🌉</div>
+                    <h3>Build Bridge</h3>
+                    <p>Builder</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🌈</div>
+                    <h3>Color Snake</h3>
+                    <p>Puzzle</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🎯</div>
+                    <h3>Pixel Gun</h3>
+                    <p>FPS</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏁</div>
+                    <h3>Drift Hunters</h3>
+                    <p>Racing</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🎪</div>
+                    <h3>Itch.io</h3>
+                    <p>Platform</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🎲</div>
+                    <h3>Dice Game</h3>
+                    <p>Luck</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🎰</div>
+                    <h3>Slots</h3>
+                    <p>Casino</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🃏</div>
+                    <h3>Card Games</h3>
+                    <p>Cards</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🎴</div>
+                    <h3>Solitaire</h3>
+                    <p>Cards</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🎯</div>
+                    <h3>Archery</h3>
+                    <p>Aim</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏹</div>
+                    <h3>Bow Master</h3>
+                    <p>Aim</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">⚔️</div>
+                    <h3>Sword Game</h3>
+                    <p>Action</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🛡️</div>
+                    <h3>Shield</h3>
+                    <p>Defense</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🔮</div>
+                    <h3>Magic</h3>
+                    <p>Fantasy</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🧙</div>
+                    <h3>Wizard</h3>
+                    <p>RPG</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐉</div>
+                    <h3>Dragon Quest</h3>
+                    <p>RPG</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">👹</div>
+                    <h3>Monster</h3>
+                    <p>Action</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🧌</div>
+                    <h3>Troll</h3>
+                    <p>Puzzle</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">👻</div>
+                    <h3>Ghost</h3>
+                    <p>Horror</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🕷️</div>
+                    <h3>Spider</h3>
+                    <p>Platform</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦇</div>
+                    <h3>Bat</h3>
+                    <p>Flight</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐢</div>
+                    <h3>Turtle</h3>
+                    <p>Platformer</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦎</div>
+                    <h3>Lizard</h3>
+                    <p>Action</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦜</div>
+                    <h3>Parrot</h3>
+                    <p>Puzzle</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦅</div>
+                    <h3>Eagle</h3>
+                    <p>Flight</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦁</div>
+                    <h3>Lion King</h3>
+                    <p>Adventure</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐯</div>
+                    <h3>Tiger</h3>
+                    <p>Arcade</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦊</div>
+                    <h3>Fox</h3>
+                    <p>Runner</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐻</div>
+                    <h3>Bear</h3>
+                    <p>Action</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐼</div>
+                    <h3>Panda</h3>
+                    <p>Cute</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐨</div>
+                    <h3>Koala</h3>
+                    <p>Climb</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦘</div>
+                    <h3>Kangaroo</h3>
+                    <p>Jump</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦒</div>
+                    <h3>Giraffe</h3>
+                    <p>Adventure</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦓</div>
+                    <h3>Zebra</h3>
+                    <p>Run</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦏</div>
+                    <h3>Rhino</h3>
+                    <p>Charge</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐘</div>
+                    <h3>Elephant</h3>
+                    <p>Memory</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦛</div>
+                    <h3>Hippo</h3>
+                    <p>Water</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦣</div>
+                    <h3>Mammoth</h3>
+                    <p>Prehistoric</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦑</div>
+                    <h3>Octopus</h3>
+                    <p>Puzzle</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐙</div>
+                    <h3>Squid</h3>
+                    <p>Adventure</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦐</div>
+                    <h3>Shrimp</h3>
+                    <p>Swim</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦞</div>
+                    <h3>Lobster</h3>
+                    <p>Ocean</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦀</div>
+                    <h3>Crab</h3>
+                    <p>Beach</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐡</div>
+                    <h3>Pufferfish</h3>
+                    <p>Sea</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐠</div>
+                    <h3>Fish</h3>
+                    <p>Tank</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐟</div>
+                    <h3>Fishing</h3>
+                    <p>Calm</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🦈</div>
+                    <h3>Shark</h3>
+                    <p>Hunt</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🐙</div>
+                    <h3>Sea Monster</h3>
+                    <p>Deep Sea</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏖️</div>
+                    <h3>Beach Tycoon</h3>
+                    <p>Simulation</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏝️</div>
+                    <h3>Island</h3>
+                    <p>Adventure</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏔️</div>
+                    <h3>Mountain</h3>
+                    <p>Climb</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏕️</div>
+                    <h3>Camping</h3>
+                    <p>Survival</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🏜️</div>
+                    <h3>Desert</h3>
+                    <p>Adventure</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🌋</div>
+                    <h3>Volcano</h3>
+                    <p>Danger</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">❄️</div>
+                    <h3>Icy</h3>
+                    <p>Winter</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🌊</div>
+                    <h3>Wave Rider</h3>
+                    <p>Surf</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">⚡</div>
+                    <h3>Thunder</h3>
+                    <p>Action</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🌪️</div>
+                    <h3>Tornado</h3>
+                    <p>Chaos</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🌈</div>
+                    <h3>Rainbow</h3>
+                    <p>Colorful</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">☄️</div>
+                    <h3>Asteroid</h3>
+                    <p>Space</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🌟</div>
+                    <h3>Star</h3>
+                    <p>Cosmic</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🚀</div>
+                    <h3>Rocket</h3>
+                    <p>Space</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">🛸</div>
+                    <h3>UFO</h3>
+                    <p>Alien</p>
+                </a>
+                <a href="https://www.crazygames.com" target="_blank" class="game-card">
+                    <div class="game-icon">👽</div>
+                    <h3>Alien Hunt</h3>
+                    <p>Sci-Fi</p>
+                </a>
             </div>
         </section>
     </div>
 
     <footer class="footer">
         <div class="footer-content">
-            <h3>🎮 Games Hub</h3>
+            <h3>🎮 Games Hub - 500+</h3>
             <p>Your ultimate destination for unlimited free games!</p>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#popular">Popular</a>
-                <a href="#action">Action</a>
-                <a href="#puzzle">Puzzle</a>
-                <a href="#sports">Sports</a>
-                <a href="#casual">Casual</a>
-            </div>
             <p>&copy; 2026 Games Hub. All rights reserved. | Made with ❤️</p>
         </div>
     </footer>
